@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>LibraryManagementSystem2</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>login.LoginServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>PageControllerServletAuthor</servlet-name>
+		<servlet-class>author.PageControllerServletAuthor</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>PageControllerServletBooks</servlet-name>
+		<servlet-class>books.PageControllerServletBooks</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>PageControllerServletBooksOut</servlet-name>
+		<servlet-class>booksOut.PageControllerServletBooksOut</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>PageControllerServletMembers</servlet-name>
+		<servlet-class>members.PageControllerServletMembers</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>PageControllerServletLibrarian</servlet-name>
+		<servlet-class>librarian.PageControllerServletLibrarian</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>EditLibrarianServlet</servlet-name>
+		<servlet-class>librarian.EditLibrarianServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>EditServletAuthor</servlet-name>
+		<servlet-class>author.EditServletAuthor</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>RegisterAuthor</servlet-name>
+		<servlet-class>author.RegisterAuthor</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>EditMembersServlet</servlet-name>
+		<servlet-class>members.EditMembersServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>EditBooksServlet</servlet-name>
+		<servlet-class>books.EditBooksServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>RegisterBooksServlet</servlet-name>
+		<servlet-class>books.RegisterBooksServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>EditBooksOutServlet</servlet-name>
+		<servlet-class>booksOut.EditBooksOutServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>DeleteAuthorServlet</servlet-name>
+		<servlet-class>author.DeleteAuthorServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>DeleteMembersServlet</servlet-name>
+		<servlet-class>members.DeleteMembersServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>RegisterMembersServlet</servlet-name>
+		<servlet-class>members.RegisterMembersServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>DeleteBooksOutServlet</servlet-name>
+		<servlet-class>booksOut.DeleteBooksOutServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>RegisterBooksOutServlet</servlet-name>
+		<servlet-class>booksOut.RegisterBooksOutServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>DeleteLibrarianServlet</servlet-name>
+		<servlet-class>librarian.DeleteLibrarianServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>RegisterLibrarianServlet</servlet-name>
+		<servlet-class>librarian.RegisterLibrarianServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>DeleteBooksServlet</servlet-name>
+		<servlet-class>books.DeleteBooksServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>PageControllerServletAuthor</servlet-name>
+		<url-pattern>/pageControllerServletAuthor</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>PageControllerServletAuthor</servlet-name>
+		<url-pattern>/authorList</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>PageControllerServletBooksOut</servlet-name>
+		<url-pattern>/pageControllerServletBooksOut</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>PageControllerServletBooksOut</servlet-name>
+		<url-pattern>/booksOutList</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>PageControllerServletBooks</servlet-name>
+		<url-pattern>/pageControllerServletBooks</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>PageControllerServletBooks</servlet-name>
+		<url-pattern>/booksList</url-pattern>
+	</servlet-mapping>
+	
+		<servlet-mapping>
+		<servlet-name>PageControllerServletMembers</servlet-name>
+		<url-pattern>/pageControllerServletMembers</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>PageControllerServletMembers</servlet-name>
+		<url-pattern>/membersList</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>PageControllerServletLibrarian</servlet-name>
+		<url-pattern>/pageControllerServletLibrarian</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>PageControllerServletLibrarian</servlet-name>
+		<url-pattern>/librarianList</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>EditServletAuthor</servlet-name>
+		<url-pattern>/editAuthorServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>EditMembersServlet</servlet-name>
+		<url-pattern>/editMembersServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>EditBooksServlet</servlet-name>
+		<url-pattern>/editBooksServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>DeleteAuthorServlet</servlet-name>
+		<url-pattern>/DeleteServlet</url-pattern>
+	</servlet-mapping>
+
+   <servlet-mapping>
+		<servlet-name>DeleteBooksOutServlet</servlet-name>
+		<url-pattern>/deleteBooksOut</url-pattern>
+	</servlet-mapping>
+	
+	 <servlet-mapping>
+		<servlet-name>EditBooksOutServlet</servlet-name>
+		<url-pattern>/editBooksOutServlet</url-pattern>
+	</servlet-mapping>
+	
+	 <servlet-mapping>
+		<servlet-name>DeleteBooksServlet</servlet-name>
+		<url-pattern>/deleteBooksServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>DeleteMembersServlet</servlet-name>
+		<url-pattern>/deleteMembersServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>EditLibrarianServlet</servlet-name>
+		<url-pattern>/editLibrarianServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>DeleteLibrarianServlet</servlet-name>
+		<url-pattern>/deleteLibrarianServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>RegisterAuthor</servlet-name>
+		<url-pattern>/registerAuthor</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>RegisterBooksServlet</servlet-name>
+		<url-pattern>/registerBooks</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>RegisterLibrarianServlet</servlet-name>
+		<url-pattern>/registerLibrarian</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>RegisterMembersServlet</servlet-name>
+		<url-pattern>/registerMembers</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>RegisterBooksOutServlet</servlet-name>
+		<url-pattern>/registerBooksOut</url-pattern>
+	</servlet-mapping>
+	
+	
+		
+
+</web-app>  
+ 
